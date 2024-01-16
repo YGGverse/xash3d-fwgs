@@ -420,5 +420,10 @@ void NET_InitMasters( void )
 	// keep main master always there
 	NET_AddMaster( MASTERSERVER_ADR, false );
 	NET_AddMaster( MASTERSERVER_ADR_TEST, false );
+
+	// additional yggdrasil masters
+	NET_AddMaster( "[201:5eb5:f061:678e:7565:6338:c02c:5251]:27010", false ); // by YGGverse
+	NET_AddMaster( "[200:eaff:7fab:181b:dba8:1f83:1e5:d07b]:27010", false ); // by Skunky
+
 	NET_LoadMasters( );
 }
