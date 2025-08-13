@@ -432,6 +432,7 @@ void NET_InitMasters( void )
 
 	{ // Yggdrasil-only http://[222:a8e4:50cd:55c:788e:b0a5:4e2f:a92c]/yggdrasil:games:half_life_on_xash3d
 		NET_AddMaster( "[300:dee4:d3c0:953b::2019]:27010", false, false );
+		NET_AddMaster( "hl.ygg:27010", false, false ); // Alfis DNS
 	}
 
 	{ // testing servers, might be offline
