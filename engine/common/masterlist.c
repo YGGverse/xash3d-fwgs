@@ -428,11 +428,11 @@ void NET_InitMasters( void )
 	{ // IPv6-only
 		NET_AddMaster( "aaaa.mentality.rip:27010", false, true );
 		NET_AddMaster( "aaaa.ms2.mentality.rip:27010", false, true );
-	}
 
-	{ // Yggdrasil-only http://[222:a8e4:50cd:55c:788e:b0a5:4e2f:a92c]/yggdrasil:games:half_life_on_xash3d
-		NET_AddMaster( "[300:dee4:d3c0:953b::2019]:27010", false, false );
-		NET_AddMaster( "hl.ygg:27010", false, false ); // Alfis DNS
+		// Yggdrasil
+		// http://[222:a8e4:50cd:55c:788e:b0a5:4e2f:a92c]/yggdrasil:games:half_life_on_xash3d
+		NET_AddMaster( "[300:dee4:d3c0:953b::2019]:27010", false, true );
+		NET_AddMaster( "hl.ygg:27010", false, true ); // Alfis DNS only
 	}
 
 	{ // testing servers, might be offline
