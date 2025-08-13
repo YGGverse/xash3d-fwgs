@@ -430,6 +430,10 @@ void NET_InitMasters( void )
 		NET_AddMaster( "aaaa.ms2.mentality.rip:27010", false, true );
 	}
 
+	{ // Yggdrasil-only http://[222:a8e4:50cd:55c:788e:b0a5:4e2f:a92c]/yggdrasil:games:half_life_on_xash3d
+		NET_AddMaster( "[300:dee4:d3c0:953b::2019]:27010", false, false );
+	}
+
 	{ // testing servers, might be offline
 		NET_AddMaster( "mentality.rip:27011", false, false );
 		NET_AddMaster( "aaaa.mentality.rip:27011", false, true );
