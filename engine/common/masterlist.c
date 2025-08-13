@@ -441,6 +441,7 @@ void NET_InitMasters( void )
 			// Alfis DNS
 			// https://github.com/Revertron/Alfis
 			NET_AddMaster( "hl.ygg:27010", false, true );
+			NET_AddMaster( "ps.hl.ygg:27010", false, true );
 			NET_AddMaster( "skunky.hl.ygg:27010", false, true );
 	}
 
