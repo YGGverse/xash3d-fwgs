@@ -433,6 +433,10 @@ void NET_InitMasters( void )
 		// https://github.com/threefoldtech/mycelium
 		NET_AddMaster( "[505:6847:c778:61a1:5c6d:e802:d291:8191]:27010", false, true );
 
+			// Alfis DNS
+			// https://github.com/Revertron/Alfis
+			NET_AddMaster( "my.hl.srv:27010", false, true );
+
 		// Yggdrasil
 		// http://[222:a8e4:50cd:55c:788e:b0a5:4e2f:a92c]/yggdrasil:games:half_life_on_xash3d
 		NET_AddMaster( "[202:68d0:f0d5:b88d:1d1a:555e:2f6b:3148]:27010", false, true );
