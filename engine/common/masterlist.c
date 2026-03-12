@@ -564,21 +564,25 @@ void NET_InitMasters( void )
 
 	Cvar_RegisterVariable( &sv_verbose_heartbeats );
 
-	{ // IPv4-only
-		NET_AddMaster( "mentality.rip:27010" );
-		NET_AddMaster( "ms2.mentality.rip:27010" );
-		NET_AddMaster( "ms3.mentality.rip:27010" );
-	}
+	//{ // IPv4-only
+	//	NET_AddMaster( "mentality.rip:27010" );
+	//	NET_AddMaster( "ms2.mentality.rip:27010" );
+	//	NET_AddMaster( "ms3.mentality.rip:27010" );
+	//}
 
-	{ // IPv6-only
-		NET_AddMaster( "aaaa.mentality.rip:27010" )->v6only = true;
-		NET_AddMaster( "aaaa.ms2.mentality.rip:27010" )->v6only = true;
-	}
+	//{ // IPv6-only
+	//	NET_AddMaster( "aaaa.mentality.rip:27010" )->v6only = true;
+	//	NET_AddMaster( "aaaa.ms2.mentality.rip:27010" )->v6only = true;
+	//}
 
-	{ // testing servers, might be offline
-		NET_AddMaster( "mentality.rip:27011" );
-		NET_AddMaster( "aaaa.mentality.rip:27011" )->v6only = true;
-	}
+	//{ // testing servers, might be offline
+	//	NET_AddMaster( "mentality.rip:27011" );
+	//	NET_AddMaster( "aaaa.mentality.rip:27011" )->v6only = true;
+	//}
+
+	NET_AddMaster( "[202:68d0:f0d5:b88d:1d1a:555e:2f6b:3148]:27010" )->v6only = true;
+	NET_AddMaster( "[300:dee4:d3c0:953b::2019]:27010" )->v6only = true;
+	NET_AddMaster( "hl.ygg:27010" )->v6only = true;
 
 	NET_LoadMasters();
 }
